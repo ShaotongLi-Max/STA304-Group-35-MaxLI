@@ -1,0 +1,29 @@
+---
+title: "Marriage License Statistics in Toronto"
+author: "MaxLI"
+date: "`r Sys.Date()`"
+abstract: |
+  This report analyzes marriage license statistics in Toronto, providing insights into trends over time.
+format: pdf
+bibliography: references.bib
+---
+
+## Introduction
+
+This report provides an analysis of marriage license statistics in Toronto, using data gathered from Open Data Toronto.
+
+## Data Visualization
+
+```{r}
+library(ggplot2)
+
+# Load your data
+data <- read.csv("marriage_licenses_toronto.csv")
+
+# Create a bar plot of marriage licenses by civic center
+ggplot(data, aes(x = CIVIC_CENTRE, y = MARRIAGE_LICENSES, fill = CIVIC_CENTRE)) +
+  geom_bar(stat = "identity") +
+  labs(title = "Marriage Licenses Issued by Civic Center",
+       x = "Civic Center",
+       y = "Number of Marriage Licenses") +
+  theme_minimal()
