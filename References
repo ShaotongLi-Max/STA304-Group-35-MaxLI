@@ -1,0 +1,14 @@
+@Manual{R,
+  title = {R: A Language and Environment for Statistical Computing},
+  author = {R Core Team},
+  year = {2023},
+  note = {R Foundation for Statistical Computing, Vienna, Austria},
+  url = {https://www.R-project.org/}
+}
+
+@Misc{opendatatoronto,
+  title = {Open Data Toronto},
+  author = {{City of Toronto}},
+  year = {2023},
+  url = {https://open.toronto.ca/}
+}
